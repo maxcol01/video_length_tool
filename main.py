@@ -1,5 +1,5 @@
 # Target study time
-study_time = int(input('Enter how long you want to study [h]: '))
+study_time = float(input('Enter how long you want to study [h]: '))
 TARGET = study_time * 3600
 
 
@@ -22,3 +22,5 @@ while is_target_reached:
         is_target_reached = False
     with open('video_list.txt', 'a') as file:
         file.write(f'{video[0]}\n\n')
+
+print(total_sum)
