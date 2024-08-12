@@ -21,4 +21,4 @@ while is_target_reached:
     else:
         is_target_reached = False
     with open('video_list.txt', 'a') as file:
-        file.write(f'{video[0]}\n')
+        file.write(f'{video[0]}\n\n')
