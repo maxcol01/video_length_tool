@@ -11,10 +11,12 @@ def ask_input():
 
 
 def clear_file():
-    with open('video_list.txt', 'w') as initial_file:
+    with open('video_list.txt', 'r') as initial_file:
         content = initial_file.read()
-        if content in initial_file:
-            initial_file.write('')
+        if content:
+            with open('video_list.txt', 'w') as initial_file_rep:
+                content2 = initial_file_rep.write('')
+                print('yes', content2)
 
 
 is_target_reached = True
